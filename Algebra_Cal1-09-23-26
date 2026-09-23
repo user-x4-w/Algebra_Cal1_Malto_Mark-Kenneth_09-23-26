@@ -1,1 +1,52 @@
 
+#algebra and calculus 1
+#(x) = (ax^2+ bx+c)
+#1.solve a linear equation (ax+b=c)
+#2.solve a quadratic equation (ax^2 + bx + c = 0)
+#3.evaluate  f(x) = ax^ 2 + bx + c
+#4.Find the derivative f (x) at a point
+#5.Estimate a limit as a x approaches a value
+#6.compute a definite integral of (x)
+#7.quit
+
+import math 
+
+
+print("ALGEBRA AND CALCULUS")
+print("""
+1.Solve a linear equation (ax+b=c).
+2.Solve a quadratic equation (ax^2 + bx + c = 0)
+3.Evaluate f(x) = ax^ 2 + bx + c
+4.Find the derivative f(x) at a point
+5.Estimate a limit as a x approaches a value.
+6.Compute a definite integral of (x)
+7.Quit.""")
+print()
+choice = (input("Enter a number: ")).strip()
+if choice == "1":
+    a = int(input("Enter the Value of A: "))
+    b = int(input("Enter the Value of B: "))
+    c = int(input("Enter the Value of C: "))
+    print("x =", (c - b) / a)
+
+elif choice == "2":
+    a = int(input("Enter the Value of A: "))
+    b = int(input("Enter the Value of B: "))
+    c = int(input("Enter the Value of C: "))
+    discriminant(b**2) - (4 * a * c)
+
+    if discriminant > 0:
+        root1 = (-b + math.sqrt(discriminant)) / (2 * a)
+        root2 = (-b - math.sqrt(discriminant)) / (2 * a)
+        print(f"Roots: x1 = {root1}, x2 = {root2}")
+
+    elif discriminant == 0:
+        root = -b / (2 * a)
+        print(f"One root: x = {root}")
+    else:
+        print("No real solutions (Complex/Imaginary roots).")
+
+    
+
+    
+
