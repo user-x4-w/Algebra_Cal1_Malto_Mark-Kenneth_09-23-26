@@ -46,6 +46,14 @@ elif choice == "2":
     else:
         print("No real solutions (Complex/Imaginary roots).")
 
+    elif choice == "3":
+    a = int(input("Enter the Value of A: "))
+    b = int(input("Enter the Value of B: "))
+    c = int(input("Enter the Value of C: "))
+    x = int(input("Enter the Value of X: "))
+    result = a * (x**2) + b * x + c
+    print(f"f({x}) = {result}")
+
     
 
     
